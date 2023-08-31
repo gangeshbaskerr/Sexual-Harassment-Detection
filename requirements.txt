@@ -1,4 +1,4 @@
 streamlit==0.85.0
 numpy==1.21.2
 tensorflow==2.5.0
-gdown==4.3.3
+gdown
