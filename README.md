@@ -99,11 +99,11 @@ We did 80 epochs, to get a good accuracy from the model i.e. 98% for training ac
 <hr/>
 
 # Output <img src="https://cdn4.iconfinder.com/data/icons/business-startup-36/64/552-512.png" width="90" height="80">
-## No Harassment
+## Harassment
 
 <p align="middle"><img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/09892e38-2275-402a-b8be-5df1173076c3.gif" width="500" height="500">
     
-## Harassment
+## No Harassment
 
 <p align="middle"><img src="https://github.com/gangeshbaskerr/Sexual-Harassment-Detection/assets/130077430/15c0173b-bf4c-445c-9ce3-89cb00eb2e51.gif" width="500" height="500">
     
