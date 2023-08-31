@@ -13,7 +13,7 @@ def load_cached_model(file_id, output_path):
     model = load_model(output_path)
     return model
 
-def predict_from_camera(model, base_model):
+def predict_and_display_camera(model, base_model):
     cap = cv2.VideoCapture(0)
 
     st.write("Live Stream:")
@@ -38,8 +38,11 @@ def predict_from_camera(model, base_model):
 
         label = "Harassment" if class_label == 1 else "Non-Harassment"
         prob_text = f"{label} ({class_prob:.2f})"
+        
+        # Overlay prediction on the frame
         cv2.putText(frame, prob_text, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
+        # Display the processed frame with overlay using Streamlit's st.image
         stream.image(frame, channels="BGR", caption="Live Prediction")
 
     cap.release()
@@ -60,7 +63,7 @@ def main():
 
     st.write("Press the button to start prediction:")
     if st.button("Start Prediction"):
-        predict_from_camera(model, base_model)
+        predict_and_display_camera(model, base_model)
 
 if __name__ == "__main__":
     main()
