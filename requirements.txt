@@ -1,5 +1,5 @@
-streamlit
-numpy
-gdown
-tensorflow
-opencv-python
+streamlit==1.24.0
+numpy==1.24.3
+gdown==4.6.0
+tensorflow==2.12.0
+opencv-python==4.7.0.72
